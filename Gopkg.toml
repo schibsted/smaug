@@ -1,0 +1,16 @@
+
+[[dependencies]]
+  branch = "master"
+  name = "github.com/aws/aws-sdk-go"
+
+[[dependencies]]
+  branch = "master"
+  name = "github.com/go-errors/errors"
+
+[[dependencies]]
+  name = "github.com/go-ini/ini"
+  revision = "2e44421e256d82ebbf3d4d4fcabe8930b905eff3"
+
+[[dependencies]]
+  branch = "master"
+  name = "github.com/stretchr/testify"
