@@ -3,9 +3,9 @@ package http
 import (
 	"encoding/json"
 	"fmt"
-	log "github.com/sirupsen/logrus"
 	"github.com/go-errors/errors"
 	"github.com/schibsted/smaug/credentials"
+	log "github.com/sirupsen/logrus"
 	"net/http"
 	"regexp"
 )
