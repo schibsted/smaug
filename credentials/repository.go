@@ -1,10 +1,10 @@
 package credentials
 
 import (
-	log "github.com/sirupsen/logrus"
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/credentials/stscreds"
 	"github.com/aws/aws-sdk-go/service/sts/stsiface"
+	log "github.com/sirupsen/logrus"
 	"time"
 )
 

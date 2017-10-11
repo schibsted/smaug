@@ -1,0 +1,11 @@
+language: go
+go:
+- 1.8.x
+go_import_path: github.com/schibsted/smaug
+script:
+- make test
+after_success:
+- if [ -n "$TRAVIS_TAG" ]; then make publish; fi
+env:
+  global:
+  - secure: FD4IVN+HMwq1n0RtFkRNylN2Rf9+PMkQDJHVZ1Nd+k7O/pd8VYXWYTZEPP80MpGqSJkUz0MGCFAOoSmu0B1umQ0yVbDqSsCSeo3R2b5XZFFRt+k77SUqp7kwbz0dq9MxH2wDTSiB6YJEqWpOhKaq3Y9PmD94eqmAD89LDmCbIBtx8OxhOnCW2PixFB736QtyQ1XMIUQQz+AbSjBd+x3Qs8ckRPHqaO3Rypv2rYqHCVJzyD3aowtd3mRYhL7DVOr/ZC+C4/wBUpWySomI4yyvzusLe2zWgAyp+Kt8A7dXsKNl8lNsaW2ETCBob71AHoX6j2Wj6yA3yUoKttTSB6qV2muBUH5ZbMtVTB/4sObs3PHuG8oDbn/TZDQF8Yzp0jTJU9OQYaYmrEOgk+bG5SZySWWsckxEVOsGbeIzm0tW7ygfd2OiU0bG+GBrTqrLvBKht71bDROqNEiC1m9LN6Q2ry2uqe2Edvonn7iKLkYmWtyBes7wHIJShoz2NUNHjPTS+2jALCDI4SPyAXmNGxWZMKy3I3x1Agn9mxCfAIsHZtay88ey+4twvK3t9MNq0Bcy/h6BsYh+95pUGcMrFICho9JDTimRc+ZUBmg/tI52kQ1CWOydLLHdfzIrzu2MeWd7/1e3jjp5PfvkvXifkqL+Py4QA2+rOOi8s6+xZr3Rgvs=

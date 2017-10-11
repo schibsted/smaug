@@ -2,13 +2,13 @@ package main
 
 import (
 	"flag"
-	log "github.com/sirupsen/logrus"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/sts"
 	"github.com/schibsted/smaug/credentials"
 	http_pkg "github.com/schibsted/smaug/http"
 	"github.com/schibsted/smaug/role"
+	log "github.com/sirupsen/logrus"
 	"net/http"
 	"os"
 )
